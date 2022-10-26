@@ -1,0 +1,37 @@
+
+
+<div class="container">
+    <div class="row">
+        <div class="col div col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+        
+        <div class="row g-3">
+            <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+<label for="" class="form-label">Image</label>
+<input type="file" name="image" [(ngModel)]="image" id="" class="form-control">
+            </div>
+            <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                <button class="btn btn-success" (click)="readvalue()">Post</button>
+            </div>
+</div>
+<br>
+<div class="row g-4">
+    <div *ngFor="let i of dataD" class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+        <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">{{i.name}}</h5>
+          <h6 class="card-subtitle mb-2 text-muted">{{i.postdate}}</h6>
+          <img src="{{i.image}}" class="img-fluid" alt="...">          
+        </div>
+      </div>
+      </div>
+
+</div>
+
+      
+        
+        </div>
+    </div>
+</div>
+
+
+
